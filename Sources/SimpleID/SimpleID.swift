@@ -17,7 +17,7 @@ public class SimpleID {
         case mixedCase
     }
     
-    func create(_ chars:characters,_ cases:cases = .lowerCase,length:Int = 12) -> String {
+    public func create(_ chars:characters,_ cases:cases = .lowerCase,length:Int = 12) -> String {
         var pool = ""
         var idString = ""
         switch chars {
@@ -37,7 +37,7 @@ public class SimpleID {
         return idString
     }
     
-    func createBatch(amount:Int,_ chars:characters,_ cases:cases = .lowerCase,length:Int=12) -> [String] {
+    public func createBatch(amount:Int,_ chars:characters,_ cases:cases = .lowerCase,length:Int=12) -> [String] {
         var idStrings = [String]()
         while idStrings.count != amount {
             let newID = create(chars, cases, length: length)
@@ -50,12 +50,12 @@ public class SimpleID {
         return idStrings
     }
     
-    func createDummyEthAddress() -> String {
+    public func createDummyEthAddress() -> String {
         let id = create(.mixedCharacters,.mixedCase,length: 40)
         return "0x\(id)"
     }
     
-    func createDummyEthAddress(amount:Int) -> [String] {
+    public func createDummyEthAddress(amount:Int) -> [String] {
         var idStrings = [String]()
         if amount < 2 {}
         else {
