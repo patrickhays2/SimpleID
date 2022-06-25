@@ -1,6 +1,6 @@
 import Foundation
 
-class SimpleID {
+public class SimpleID {
     
     var dummyIDs = [String]()
     let letters = "abcdefghijklmnopqrstuvwxyz"
