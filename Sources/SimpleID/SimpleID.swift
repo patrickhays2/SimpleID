@@ -6,12 +6,12 @@ public class SimpleID {
     let letters = "abcdefghijklmnopqrstuvwxyz"
     let numbers = "0123456789"
     
-    enum characters {
+    public enum characters {
         case lettersOnly
         case numbersOnly
         case mixedCharacters
     }
-    enum cases {
+    public enum cases {
         case upperCase
         case lowerCase
         case mixedCase
