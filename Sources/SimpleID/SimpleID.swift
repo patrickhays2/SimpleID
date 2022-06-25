@@ -6,6 +6,8 @@ public class SimpleID {
     let letters = "abcdefghijklmnopqrstuvwxyz"
     let numbers = "0123456789"
     
+    public init()
+    
     public enum characters {
         case lettersOnly
         case numbersOnly
