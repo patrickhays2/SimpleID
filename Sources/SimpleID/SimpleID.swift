@@ -2,7 +2,7 @@ import Foundation
 
 public class SimpleID {
     
-    var dummyIDs = [String]()
+    //var dummyIDs = [String]()
     let letters = "abcdefghijklmnopqrstuvwxyz"
     let numbers = "0123456789"
     
